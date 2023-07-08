@@ -1,0 +1,13 @@
+package com.example.extreme_solution.data.db
+
+import androidx.room.Database
+import androidx.room.RoomDatabase
+
+
+@Database(entities = [ProductEntityDB::class], version = 1, exportSchema = false)
+abstract class ProductDatabase : RoomDatabase() {
+
+    abstract fun productDao() : ProductDao
+
+
+}
