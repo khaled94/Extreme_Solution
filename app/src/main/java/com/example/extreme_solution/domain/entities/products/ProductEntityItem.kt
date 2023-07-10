@@ -1,6 +1,6 @@
-package com.example.extreme_solution.domain.entities
+package com.example.extreme_solution.domain.entities.products
 
-data class Product_Entity_Item(
+data class ProductEntityItem(
     val category: String,
     val description: String,
     val id: Int,

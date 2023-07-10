@@ -1,6 +1,6 @@
 package com.example.extreme_solution.data.db
 
-import com.example.extreme_solution.domain.entities.Product_Entity_Item
+import com.example.extreme_solution.domain.entities.products.ProductEntityItem
 
 
 class ProductMapperDB {
