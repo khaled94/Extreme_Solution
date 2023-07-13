@@ -3,6 +3,7 @@ package com.example.extreme_solution.presentation.di
 import android.app.Application
 import com.example.extreme_solution.data.di.DataBaseModule
 import com.example.extreme_solution.data.di.NetworkModule
+import com.example.extreme_solution.domain.useCases.UseCaseModule
 import com.example.extreme_solution.presentation.app.App
 import dagger.BindsInstance
 import dagger.Component
@@ -17,7 +18,8 @@ import javax.inject.Singleton
         ViewModelFactory::class,
         ActivityBuildersModule::class,
         NetworkModule::class,
-        DataBaseModule::class
+        DataBaseModule::class,
+        UseCaseModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App> {

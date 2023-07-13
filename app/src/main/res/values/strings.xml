@@ -9,4 +9,13 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="electronics">electronics</string>
+    <string name="men_s_clothing">men\'s clothing</string>
+    <string name="women_s_clothing">women\'s clothing</string>
+    <string name="jewelery">jewelery</string>
+    <string name="add_to_wishlist">Add to WishList</string>
+    <string name="title">title</string>
+    <string name="total_price">total price:</string>
 </resources>

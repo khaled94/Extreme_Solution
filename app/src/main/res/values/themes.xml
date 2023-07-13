@@ -22,4 +22,13 @@
     <style name="Theme.Extreme_Solution.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Extreme_Solution.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Customize the color of the text in the search box -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Remove the underline -->
+        <item name="queryBackground">@null</item>
+        <!-- Customize the hint text color -->
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
 </resources>

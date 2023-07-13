@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/all" />
+    <item android:title="@string/electronics" />
+    <item android:title="@string/men_s_clothing" />
+    <item android:title="@string/women_s_clothing" />
+    <item android:title="@string/jewelery" />
+    <!-- Add more categories here -->
+</menu>

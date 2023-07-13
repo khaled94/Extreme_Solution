@@ -1,11 +1,13 @@
 package com.example.extreme_solution.domain.entities.products
 
-data class ProductEntityItem(
+import com.example.extreme_solution.data.model.DataRating
+
+data class DomainProduct(
     val category: String,
     val description: String,
     val id: Int,
     val image: String,
     val price: Double,
-    val rating: Rating,
+    val rating: DomainRating,
     val title: String
 )

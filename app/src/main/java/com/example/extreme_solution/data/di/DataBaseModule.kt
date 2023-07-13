@@ -5,6 +5,7 @@ import androidx.annotation.NonNull
 import androidx.room.Room
 import com.example.extreme_solution.data.db.ProductDao
 import com.example.extreme_solution.data.db.ProductDatabase
+import com.example.extreme_solution.data.db.ProductMapperDB
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -26,10 +27,10 @@ class DataBaseModule {
         return database.productDao()
     }
 
-/*    @Provides
+    @Provides
     @Singleton
-    fun provideDataMapper(@NonNull database: AlarmDatabase): DataMapper {
-        return database.dataMapper()
-    }*/
+    fun provideProductMapperDB(): ProductMapperDB {
+        return ProductMapperDB()
+    }
 
 }

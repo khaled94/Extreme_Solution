@@ -1,0 +1,18 @@
+1- I have mappers to map objects between layers but didn't use them because 
+too much boiler plate but I do get why using mappers would be best practice 
+
+2 - design isn't the best as you havn't provided design AND I gave each product type 
+differnet color to tell them apart
+
+3- I didn't handle quanity in product if user added same item twice because the way to 
+handle it wasn't clear at descrption there are solutions to handle it iof that's something
+that was meant to part of the task but I didn't get that I got that you want me to naviagte and 
+calculate price and that's it.
+
+4- implemented one unit test for product use case 
+
+5 - the naviagtion isn't the best as it wasn't really clear in the description
+
+6- the timeline was the main issue but I tried to implement as much as possible following all the rules
+
+7- willing to implement improvment if necessary

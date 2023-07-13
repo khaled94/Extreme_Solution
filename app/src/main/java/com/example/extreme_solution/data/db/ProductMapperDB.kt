@@ -1,21 +1,36 @@
 package com.example.extreme_solution.data.db
 
-import com.example.extreme_solution.domain.entities.products.ProductEntityItem
+import com.example.extreme_solution.domain.entities.productDetails.ProductDetailsEntity
+import com.example.extreme_solution.domain.entities.productDetails.Rating
+import com.example.extreme_solution.domain.entities.products.DomainProduct
 
 
 class ProductMapperDB {
+    fun mapFromDBEntityToDomainProduct(entity: ProductEntityDB): ProductDetailsEntity {
+        return ProductDetailsEntity(
+            entity.category,
+            entity.description,
+            entity.id!!,
+            entity.image,
+            entity.price,
+            Rating(entity.ratingCount, entity.ratingRate),
+            entity.title
+        )
+    }
 
-    /*fun mapFromEntityToModel(entity: ProductEntityDB): Product_Entity_Item {
-
-    }*/
-
-    //fun List<AlarmEntity>.toAlarmListResponseItemList() = this.map { it.toAlarmListResponseItem() }
-
-   /* fun mapFromModelToEntity(model: Product_Entity_Item): ProductEntityDB {
-
-    }*/
-
-
-    //fun List<AlarmListResponseItem>.toAlarmTableModelList() = this.map { it.toAlarmTableModel() }
+    fun mapFromDomainProductToDBEntity(product: ProductDetailsEntity): ProductEntityDB {
+        return ProductEntityDB(
+            product.id,
+            product.title,
+            product.category,
+            product.description,
+            product.image,
+            product.price,
+            product.rating.count,
+            product.rating.rate
+        )
+    }
 }
+
+
 

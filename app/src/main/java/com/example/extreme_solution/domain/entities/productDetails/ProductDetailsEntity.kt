@@ -5,7 +5,7 @@ data class ProductDetailsEntity(
     val description: String,
     val id: Int,
     val image: String,
-    val price: Int,
+    val price: Double,
     val rating: Rating,
     val title: String
 )
